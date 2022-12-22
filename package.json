@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "figlet": "^1.5.2"
-  }
+    "figlet": "^1.5.2",
+    "jest": "^29.3.1",
+    "save-dev": "^0.0.1-security"
+  },
+  "name": "node_exercises",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "supertest": "^6.3.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauricellaAndrea/node_exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauricellaAndrea/node_exercises/issues"
+  },
+  "homepage": "https://github.com/LauricellaAndrea/node_exercises#readme"
 }
