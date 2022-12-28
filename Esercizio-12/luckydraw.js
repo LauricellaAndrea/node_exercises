@@ -1,10 +1,5 @@
-Promises lucky draw
+const players = ["Tina", "Jorge", "Julien"];
 
-The `luckyDraw` function returns a promise. Create a promise chain where the function is called for for each of the players: Joe, Caroline and Sabrina
-
-Log out the resolved value for each promise and handle any promise rejections in the chain.
-
-```
 function luckyDraw(player) {
   return new Promise((resolve, reject) => {
     const win = Boolean(Math.round(Math.random()));
@@ -17,4 +12,17 @@ function luckyDraw(player) {
       }
     });
   });
-}`
+}
+async function GetResults(element) {
+  try {
+      const result = await luckyDraw(element);
+      console.log(result);
+  } catch (error) {
+      console.error(error.message);
+  }
+}
+
+
+players.forEach(element => {
+  GetResults(element)
+})
